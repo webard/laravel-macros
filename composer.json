@@ -1,0 +1,45 @@
+{
+    "name": "webard/laravel-macros",
+    "description": "Couple useful macros for Laravel",
+    "keywords": [
+        "webard",
+        "laravel-macros"
+    ],
+    "homepage": "https://github.com/webard/laravel-macros",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Webard",
+            "email": "code@webard.me",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0",
+        "illuminate/database": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webard\\LaravelMacros\\": "src"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webard\\LaravelMacros\\LaravelMacrosServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "laravel/pint": "^1.15"
+    }
+}
